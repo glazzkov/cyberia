@@ -11,6 +11,9 @@ const uiSlice = createSlice({
     toggleMobileNavOpen: (state) => {
       state.mobileNavOpen = !state.mobileNavOpen;
     },
+    setMobileNavOpenState: (state, action) => {
+      state.mobileNavOpen = action.payload;
+    },
     handleScroll: (state) => {
       state.deltaScrollY = window.scrollY - state.scrollY;
       state.scrollY = window.scrollY;
@@ -18,5 +21,5 @@ const uiSlice = createSlice({
   },
 });
 
-export const { toggleMobileNavOpen, handleScroll } = uiSlice.actions;
+export const { toggleMobileNavOpen, handleScroll, setMobileNavOpenState } = uiSlice.actions;
 export default uiSlice.reducer;
