@@ -14,6 +14,7 @@ export const themes = {
     colors: {
       background_main: '#ffffff',
       background_nav: '#F4F6FC',
+      background_nav_desktop: '#F7F8FB',
       background_footer: '#2B2D3A',
       text_main: '#303958',
       text_invert: '#ffffff',
@@ -22,6 +23,8 @@ export const themes = {
       accentPrimary_2: '#303958',
       accentPrimary_3: '#ffffff',
       accentSecondary: '#9AA8BA',
+      accentInvalid: '#E83B3B',
+      accentSuccess: '#8FD97D',
       accentSecondary_disabled: '#C4D2E3',
       toggler: '#C2CBE7',
       burger: '#A5B5CA',
@@ -29,6 +32,7 @@ export const themes = {
     gradients: {
       main: 'linear-gradient(154.02deg, #E9ECF6 -18.59%, #FFFFFF 64.61%)',
       card: 'linear-gradient(360deg, #090B21 0%, rgba(49, 51, 65, 0) 70.08%)',
+      card_active: 'linear-gradient(0.48deg, #090B21 36.98%, rgba(49, 51, 65, 0) 181.42%)',
       toggler: 'linear-gradient(314.86deg, #FFFFFF 16%, #F3F7FF 95.39%)',
     },
     shadows: {
