@@ -11,6 +11,7 @@ export const StyledHeader = styled.header`
   overflow-y: ${(props) => (props.open ? 'scroll' : 'visible')};
   -ms-overflow-style: none;
   scrollbar-width: none;
+  z-index: 10;
 
   &::-webkit-scrollbar {
     display: none;
@@ -18,8 +19,10 @@ export const StyledHeader = styled.header`
 
   @media ${(props) => props.theme.mediaQueries.desktop} {
     height: ${(props) => '120px'};
-    background-color: ${(props) => (props.inheritBackground ? 'inherit' : props.theme.colors.background_main)};
+    background-color: ${(props) => (props.inheritBackground ? 'inherit' : props.theme.colors.background_nav_desktop)};
     overflow-y: visible;
+
+    box-shadow: ${(props) => (props.inheritBackground ? 'none' : props.theme.shadows.header)};
   }
 
   @media ${(props) => props.theme.mediaQueries.tabletOnly} {
